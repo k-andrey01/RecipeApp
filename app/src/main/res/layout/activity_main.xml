@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:src="@drawable/img"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="350dp"
+        android:textColor="@color/black"
+        android:layout_height="100dp"
+        android:text="Recipes"
+        android:layout_marginTop="250dp"
+        android:background="#1fffda"
+        android:textSize="50dp"
+        android:onClick="goRecipe"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
